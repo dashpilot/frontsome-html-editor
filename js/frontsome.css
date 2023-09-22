@@ -1,0 +1,226 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+img,
+svg {
+  border: 1px solid transparent;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+a:hover,
+p:hover,
+img:hover,
+svg:hover {
+  border: 1px dashed #777;
+  cursor: pointer;
+}
+
+.current-item {
+  border: 1px dashed lightblue;
+  cursor: pointer;
+}
+
+.editor_container {
+  width: 370px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.editor_input {
+  display: none;
+}
+
+.wdgt-form-control,
+.wdgt input[type="text"] {
+  appearance: none;
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-image: none 100% 1 0 stretch;
+  border-radius: 0.375rem;
+  color: #212529;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.wdgt-form-control::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.wdgt-form-control:focus {
+  background-color: #fff;
+  border-color: #86b7fe;
+  box-shadow: rgba(13, 110, 253, 0.25) 0 0 0 0.25rem;
+  color: #212529;
+  outline: 0 currentcolor;
+}
+.wdgt-label {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+#input_text {
+  resize: none;
+  height: 257px;
+  overflow-y: auto;
+}
+.wdgt_close {
+  font-size: 30px;
+  line-height: 30px;
+  color: #999;
+  text-align: right;
+  display: inline-block;
+  margin-bottom: 15px;
+  float: right;
+}
+.wdgt_close:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+.wdgt-alert {
+  border-image: none 100% 1 0 stretch;
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.25rem;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.wdgt-alert-warning {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  color: #856404;
+}
+
+.wdgt-btn-outline {
+  border-radius: 0.375rem;
+  color: #6c757d;
+  cursor: pointer;
+  display: inline-block;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    "Noto Sans",
+    "Liberation Sans",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  text-decoration: none currentcolor solid;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+
+  background-color: #fff;
+  border: 1px solid #cfd3da;
+  border-image: none 100% 1 0 stretch;
+  margin-bottom: 15px;
+}
+
+.wdgt-btn-outline:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.wdgt-title {
+  font-size: 18px;
+  margin-top: 7px;
+}
+
+.wdgt-header {
+  margin-bottom: 5px;
+}
+
+.wdgt-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.wdgt-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s normal forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s normal forwards ease-in-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
