@@ -91,7 +91,7 @@ svg:hover {
 }
 #input_text {
   resize: none;
-  height: 257px;
+  height: 200px;
   overflow-y: auto;
 }
 .wdgt_close {

@@ -83,7 +83,7 @@ document.body.addEventListener("click", (event) => {
       input_text.innerHTML = content;
       editor_text.style.display = "block";
       curEl.classList.add("current-item");
-      editor_container.style.height = "330px";
+      editor_container.style.height = "273px";
     }
 
     if (image.includes(type)) {
